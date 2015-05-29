@@ -1,6 +1,6 @@
 msgstr = <<END_OF_MESSAGE
-From: asikakolli@nisum.com
-To: asikakolli@osius.com
+From: abc@gmail.com
+To: xyz@gmail.com
 Subject: test message
 Date: Sat, 23 Jun 2015 16:26:43 +0900
 
@@ -15,6 +15,6 @@ smtp_settings = Net::SMTP.new('smtp.gmail.com', 587);
 
 smtp_settings.enable_starttls
 
-smtp_settings.start('smtp.gmail.com', 'asikakolli@nisum.com', 'As$li#2017', :login) do |smtp|
-  smtp.send_message msgstr, 'asikakolli@nisum.com', 'asikakolli@osius.com'
+smtp_settings.start('smtp.gmail.com', 'abc@gmail.com', 'XXXXXX', :login) do |smtp|
+  smtp.send_message msgstr, 'abc@gmail.com', 'xyz@gmail.com'
 end
